@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agendar Cita</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      padding: 20px;
+    }
+
+    h1 {
+      color: #1a3d7c; /* contraste alto */
+    }
+
+    h2 {
+      color: #b30000; /* buen contraste */
+    }
+
+    .container {
+      background-color: #fff8dc;
+      padding: 20px;
+      border-radius: 12px;
+      max-width: 400px;
+      margin: auto;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    label {
+      display: block;
+      margin: 10px 0 5px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    input[type="date"],
+    input[type="time"] {
+      width: 100%;
+      padding: 10px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      background-color: #fff;
+      font-size: 14px;
+      color: #000;
+    }
+
+    button {
+      margin-top: 15px;
+      width: 100%;
+      padding: 12px;
+      font-size: 16px;
+      border-radius: 8px;
+      border: none;
+      cursor: pointer;
+      background-color: #b30000; /* rojo con contraste */
+      color: #fff;
+    }
+
+    button:hover {
+      background-color: #800000;
+    }
+
+    .historial {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+
+    .historial img {
+      margin-right: 8px;
+    }
+
+    .perfil {
+      margin-top: 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <!-- H1 principal único -->
+  <h1>Oreste-S</h1>
+
+  <div class="container">
+    <div class="historial">
+      <!-- Ícono decorativo -->
+      <img src="icono-historial.png" alt="" role="presentation" width="24" height="24">
+      <a href="#" style="color:#b30000; font-weight:bold;">Ver Historial</a>
+    </div>
+
+    <!-- Subtítulo -->
+    <h2>Agendar Cita</h2>
+
+    <form action="#" method="post">
+      <label for="fecha">Fecha</label>
+      <input type="date" id="fecha" name="fecha">
+
+      <label for="hora">Hora</label>
+      <input type="time" id="hora" name="hora">
+
+      <button type="submit">Reservar</button>
+    </form>
+
+    <div class="perfil">
+      <!-- Imagen con alt adecuado -->
+      <img src="icono-perfil.png" alt="Foto de perfil" width="40" height="40">
+      <p>Perfil</p>
+    </div>
+  </div>
+</body>
+</html>
